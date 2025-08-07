@@ -1,6 +1,6 @@
 export default function create(date){
     let list = [' Mo Tu We Th Fr Sa Su'];
-    if(date === '') return;
+    if(date === '') return [];
     const y = parseInt(date.split("-")[0]);
     const m = parseInt(date.split("-")[1]);
     const vis = y % 4 == 0 && (y % 100 != 0 || y % 400 == 0);
